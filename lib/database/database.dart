@@ -3,7 +3,7 @@ import 'package:flutter_application_2/models/tarefa.dart';
 import 'package:sqflite/sqflite.dart' as sqlite;
 import 'package:path/path.dart' as path;
 
-class DBUtil {
+class Database {
   static Future<sqlite.Database> _getDB() async {
     final databasePath = await sqlite.getDatabasesPath();
     final arqBD = path.join(databasePath, 'tasks.db');
