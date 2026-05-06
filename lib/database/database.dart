@@ -6,14 +6,14 @@ import 'package:path/path.dart' as path;
 class Database {
   static Future<sqlite.Database> _getDB() async {
     final databasePath = await sqlite.getDatabasesPath();
-    final arqBD = path.join(databasePath, 'tasks.db');
+    final arqBD = path.join(databasePath, 'tarefa.db');
 
     return sqlite.openDatabase(
       arqBD,
       version: 1,
       onCreate: (db, version) {
         db.execute('''
-          CREATE TABLE Task(
+          CREATE TABLE Tarefa(
             id            INTEGER PRIMARY KEY AUTOINCREMENT,
             titulo        TEXT    NOT NULL,
             descricao     TEXT    NOT NULL,
