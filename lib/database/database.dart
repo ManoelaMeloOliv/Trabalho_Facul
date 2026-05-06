@@ -41,7 +41,7 @@ class Database {
     return db.query(table);
   }
 
-  static Future<int> update(Tarefa task) async {
+  static Future<int> update(Tarefa tarefa) async {
     final db = await _getDB();
     return await db.update(
       Tarefa.tableName,
