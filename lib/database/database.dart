@@ -1,9 +1,9 @@
 
-import 'package:flutter_application_2/models/tarefa.dart';
+import 'package:trabalho_facul/models/tarefa.dart';
 import 'package:sqflite/sqflite.dart' as sqlite;
 import 'package:path/path.dart' as path;
 
-class Database {
+class DBUtil {
   static Future<sqlite.Database> _getDB() async {
     final databasePath = await sqlite.getDatabasesPath();
     final arqBD = path.join(databasePath, 'tarefa.db');
@@ -45,9 +45,9 @@ class Database {
     final db = await _getDB();
     return await db.update(
       Tarefa.tableName,
-      task.toMap(),
+      tarefa.toMap(),
       where: 'id = ?',
-      whereArgs: [task.id],
+      whereArgs: [tarefa.id],
     );
   }
 

@@ -1,20 +1,18 @@
-name: flutter_application_2
-description: "A new Flutter project."
+name: trabalho_facul
+description: "App de Tarefas"
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.11.5
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^1.0.8
-  provider: ^6.0.5
-  sqflite: ^2.4.2+1
-  path: ^1.9.1
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  provider: ^6.1.1
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:

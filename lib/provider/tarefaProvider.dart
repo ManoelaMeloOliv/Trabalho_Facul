@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import '../models/tarefa.dart';
+import 'package:trabalho_facul/models/tarefa.dart';
 import '../database/database.dart';
 
-class Tarefaprovider extends ChangeNotifier {
-  List<tarefa> _tarefa = [];
+class TarefaProvider extends ChangeNotifier {
+  List<Tarefa> _tarefa = [];
   Tarefa? proximaTarefa;
   bool isLoading = false;
 
-   List<Tarefa> get Tarefa => _tarefa;
+  List<Tarefa> get tarefas => _tarefa;
 
   List<Tarefa> get importantes => _tarefa.where((t) => t.importante).toList();
   List<Tarefa> get pendentes   => _tarefa.where((t) => !t.realizada).toList();
