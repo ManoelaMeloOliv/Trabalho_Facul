@@ -91,7 +91,7 @@ class _TarefaBoasVindasState extends State<TarefaBoasVindas> {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/tasks'),
+                  onPressed: () => Navigator.pushNamed(context, '/tarefa'),
                   child: const Text('Ver tarefas'),
                 ),
               ),

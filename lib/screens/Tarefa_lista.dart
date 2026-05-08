@@ -103,7 +103,7 @@ class _TarefaListaState extends State<TarefaLista>
         return TarefaCard(
           tarefa: tarefa,
           onTap: () async {
-            await Navigator.pushNamed(context, '/detail', arguments: tarefa);
+            await Navigator.pushNamed(context, '/detalhe', arguments: tarefa);
             if (context.mounted) context.read<TarefaProvider>().load();
           },
           onEdit: () async {

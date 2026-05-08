@@ -222,7 +222,7 @@ class _TarefaformState extends State<Tarefaform> {
                           color: _textoPrincipal)),
                   value: _importante,
                   onChanged: (v) => setState(() => _importante = v),
-                  activeThumbColor: _roxo,
+                  activeColor: _roxo,
                   secondary: Icon(
                     _importante ? Icons.star_rounded : Icons.star_outline_rounded,
                     color: _importante ? const Color(0xFFF59E0B) : _cinzaTexto,
