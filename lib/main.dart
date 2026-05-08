@@ -4,7 +4,6 @@ import 'package:trabalho_facul/provider/tarefaProvider.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:trabalho_facul/screens/Tarefa_detalhe.dart';
 import 'package:trabalho_facul/screens/Tarefa_form.dart';
-import 'package:trabalho_facul/screens/Tarefa_detalhe.dart';
 import 'package:provider/provider.dart';
 import 'package:trabalho_facul/screens/Tarefa_boas_vindas.dart';
 import 'package:trabalho_facul/screens/Tarefa_lista.dart';
